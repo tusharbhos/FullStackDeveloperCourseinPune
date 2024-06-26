@@ -132,7 +132,9 @@ a:focus {
 
 .hero_area .hero_bg_box  {
   min-width: 100%;
-  background-color:#2f55d4;
+  /* background-color:#2f55d4; */
+  background: rgb(114, 108, 241);
+  background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 90%);
   min-height: 100%;
   margin-bottom: 8rem !important;
 }
@@ -1609,4 +1611,64 @@ font-size: 1.6rem !important;
  margin: auto;
 }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about section */
+
+.about-us-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.about-us-section h1 {
+  color: #4e5a96;
+  margin-bottom: 20px;
+}
+
+.about-us-section .breadcrumb {
+  background-color: transparent;
+}
+
+.about-us-section h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.about-us-section h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-us-section p {
+  color: #555;
+}
+
+.about-us-section .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
 }
