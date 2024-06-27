@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Finexo </title>
+  <title> Best FullStack developer Course in Pune </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -32,266 +32,75 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <style>
+    
+       .card {
+      transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background-color: thistle;
+    }
+    .form-container {
+      max-width: 400px;
+      margin: auto;
+    }
+    .image-container img {
+      max-width: 100%;
+      max-height: 400px;
+    }
+    .form1{
+      border: 1px solid;
+      border-radius: 10px;
+    }
+    
+    .form-group {
+      position: relative;
+    }
+    .form-group i {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #6c757d;
+    }
+    .form-control {
+      padding-left: 40px;
+      transition: background-color 0.3s;
+    }
+    .form-control:hover {
+      background-color: #f1f1f1;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #004085;
+    }
+      
+  </style>
 
-  <!-- internal css............ -->
-<style>
-  *, *:before, *:after {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  body {
-    /* background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%); */
-    font-size: 12px;
-    height:auto;
-  }
-  
-  body, button, input {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-  }
-  
-  .background {
-    display: flex;
-    min-height: 100vh;
-  }
-  
-  .container {
-    flex: 0 1 700px;
-    margin: auto;
-    padding: 10px;
-  }
-  
-  .screen {
-    position: relative;
-    background: #00204a;
-    border-radius: 15px;
-  }
-  
-  .screen:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 20px;
-    right: 20px;
-    bottom: 0;
-    border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-    z-index: -1;
-  }
-  
-  .screen-header {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background: #00204a;
-  box-shadow: 0px 2px white;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-  
-  .screen-header-left {
-    margin-right: auto;
-  }
-  
-  .screen-header-button {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin-right: 3px;
-    border-radius: 8px;
-    background: white;
-  }
-  
-  .screen-header-button.close {
-    background: #ed1c6f;
-  }
-  
-  .screen-header-button.maximize {
-    background: #e8e925;
-  }
-  
-  .screen-header-button.minimize {
-    background: #74c54f;
-  }
-  
-  .screen-header-right {
-    display: flex;
-  }
-  
-  .screen-header-ellipsis {
-    width: 3px;
-    height: 3px;
-    margin-left: 2px;
-    border-radius: 8px;
-    background: #999;
-  }
-  
-  .screen-body {
-    display: flex;
-  }
-  
-  .screen-body-item {
-    flex: 1;
-    padding: 50px;
-  }
-  
-  .screen-body-item.left {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .app-title {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    color: white;
-    font-size: 26px;
-  }
-  
-  .app-title:after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 25px;
-    height: 4px;
-    background: #00204a;
-  }
-  
-  .app-contact {
-    margin-top: 2rem;
-    font-size: 14px;
-    color: #00204a;
-  }
-  
-  .app-form-group {
-    margin-bottom: 14px;
-  }
-  
-  .app-form-group.message {
-    margin-top: 40px;
-  }
-  
-  .app-form-group.buttons {
-    margin-bottom: 0;
-    text-align: right;
-  }
-  
-  .app-form-control {
-    width: 100%;
-    padding: 10px 0;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #666;
-    color: #ddd;
-    font-size: 14px;
-    text-transform: uppercase;
-    outline: none;
-    transition: border-color .2s;
-  }
-  
-  .app-form-control::placeholder {
-    color: #666;
-  }
-  
-  .app-form-control:focus {
-    border-bottom-color: #ddd;
-  }
-  
-  .app-form-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .app-form-button:hover {
-    color: #b9134f;
-  }
-  
-  .credits {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    color: #ffa4bd;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-  }
-  
-  .credits-link {
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .dribbble {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-  }
-  .blog-hero-area{
-    display:none;
-  }
-  
-  @media screen and (max-width: 520px) {
-    .screen-body {
-      flex-direction: column;
-    }
-  
-    .screen-body-item.left {
-      margin-bottom: 30px;
-    }
-  
-    .app-title {
-      flex-direction: row;
-    }
-  
-    .app-title span {
-      margin-right: 12px;
-    }
-  
-    .app-title:after {
-      display: none;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .screen-body {
-      padding: 40px;
-    }
-  
-    .screen-body-item {
-      padding: 0;
-    }
-  }
-</style>  
 </head>
 
 <body>
 
-  <div class="hero_area blog-hero-area">
-
-    
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <!-- <div class="bg_img_box">
+        <img style="opacity:100%" src="images/gallery/gallery-img-1-dark.jpg" alt="hero-session-image">
+      </div> -->
+    </div>
 
     <!-- header section strats -->
-    <!-- <header class="header_section blog-header">
+    <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <span>
-              Finexo
-            </span>
+           <img class="logo-dscip" src="./images/DSCIP LOGO.png" alt="logo"/>
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -307,176 +116,248 @@
                 <a class="nav-link" href="about.html"> About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="service.html">Services</a>
+                <a class="nav-link" href="#gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="why.html">Why Us</a>
+                <a class="nav-link" href="course.html">Courses</a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="./blog.html"> Blog <span class="sr-only">(current)</span></a>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html"> Blog</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="./contactus.html">Contact</a>
+                <a class="nav-link" href="#contact">Contact <span class="sr-only">(current)</span></a>
               </li>
+           <!-- new added  -->
+              <li class="nav-item">
+                <a class="btn btn-primary  ml-lg-3 mt-2 mt-lg-0" href="#enrollnow">Enroll Now</a>
+            </li>
+              
+  
+
+           
             </ul>
           </div>
         </nav>
       </div>
-    </header> -->
+    </header>
     <!-- end header section -->
-    </div>
 
-    <div class="background">
-      <div class="container">
-        <div class="screen">
-          <div class="screen-header">
-          
-         <h3 style="color:white;">Contact Us</h3>
-          </div>
-          <div class="screen-body">
-            <!-- <div class="screen-body-item left">
-              <div class="app-title">
-                <span>CONTACT US</span>
-               
-              </div>
-              <div class="app-contact">Contact Info : +62 81 314 928 595</div>
-              <div class="app-contact">Mail :datacouncil@gmail.com</div>
-              <div class="app-contact">Address:Karve nagar,pune</div>
-            </div> -->
-            <div class="screen-body-item">
-              <div class="app-form">
-                <div class="app-form-group">
-                  <input class="app-form-control" placeholder="NAME" value="Krisantus Wanandi">
-                </div>
-                <div class="app-form-group">
-                  <input class="app-form-control" placeholder="EMAIL">
-                </div>
-                <div class="app-form-group">
-                  <input class="app-form-control" placeholder="CONTACT NO">
-                </div>
-                <div class="app-form-group message">
-                  <input class="app-form-control" placeholder="MESSAGE">
-                </div>
-                <div class="app-form-group buttons">
-                  <button class="app-form-button">CANCEL</button>
-                  <button class="app-form-button">SEND</button>
-                </div>
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <h1 style="color:#fff;font-weight:bold;text-transform: none !important; "class="mb-4"> Contact Pune’s No.1 Full Stack Developer Course in Pune</h1>
               </div>
             </div>
           </div>
+        
         </div>
-    
+       
       </div>
-    </div>
-    
 
-<!-- footer............................... -->
-  <!-- <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_contact">
-            <h4>
-              Address
-            </h4>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="info_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_detail">
-            <h4>
-              Info
-            </h4>
-            <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mx-auto info_col">
-          <div class="info_link_box">
-            <h4>
-              Links
-            </h4>
-            <div class="info_links">
-              <a class="active" href="index.html">
-                Home
-              </a>
-              <a class="" href="about.html">
-                About
-              </a>
-              <a class="" href="service.html">
-                Services
-              </a>
-              <a class="" href="why.html">
-                Why Us
-              </a>
-              <a class="" href="team.html">
-                Team
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Subscribe
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <section class="footer_section">
-      <div class="container">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
-        </p>
-      </div>
     </section>
-  </section> -->
+    <!-- end slider section -->
+  </div>
 
+<!--  card and enquire form section -->
+<div class="container text-center my-5 py-5">
+  
+  <p>Email: uiuxdesignschools@gmail.com</p>
+
+  <div class="row my-5">
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-map-marker-alt"></i> Pune</h5>
+          <p class="card-text">Jijamata Sahakari Bank, 2nd floor, Karvenagar, Pune, Maharashtra 411052.</p>
+          <a href="tel:+919309978817" class="card-link"><i class="fas fa-phone-alt"></i> +91 9309978817</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-map-marker-alt"></i> Singapore</h5>
+          <p class="card-text">Near City Square Mall, 180 Kitchener Road, Singapore</p>
+          <a href="tel:+6581124092" class="card-link"><i class="fas fa-phone-alt"></i> +65 81124092</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-map-marker-alt"></i> Chennai</h5>
+          <p class="card-text">Rajiv Gandhi Salai, Taramani, Chennai, Tamil Nadu 600 113</p>
+          <a href="tel:+919309978817" class="card-link"><i class="fas fa-phone-alt"></i> +91 9309978817</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-map-marker-alt"></i> Nagpur</h5>
+          <p class="card-text">TWJ Building, 4th Floor, Khamla Rd, Nargundkar Layout, Sawarkar Nagar</p>
+          <a href="tel:+919309978817" class="card-link"><i class="fas fa-phone-alt"></i> +91 9309978817</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center my-5 py-5">
+    <div class="form1 col-md-6">
+      <div class="form-container my-5">
+        <h2 class="text-center mb-4">Enquire Now</h2>
+        <form>
+          <div class="form-group my-5">
+          
+            <i class="fas fa-user"></i>
+            <input type="text" class="form-control" id="name" placeholder="Name">
+          </div>
+          <div class="form-group my-5">
+           
+            <i class="fas fa-envelope"></i>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+          </div>
+          <div class="form-group my-5">
+            
+            <i class="fas fa-phone"></i>
+            <input type="text" class="form-control" id="phone" placeholder="Mobile Number">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enquire Now</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="image-container">
+        <img src="./images/enquire.jpg" alt="Enquire Now">
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!--   card and enquire form end  -->
+
+  
+
+
+
+<!-- footer....................................................... -->
+<section class="info_section layout_padding2 mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4 info_col">
+        <div class="info_contact">
+          <h4>
+            Address
+          </h4>
+          <div class="contact_link_box">
+            <a href="https://www.google.com/maps/place/DataCouncil+%7C+data+science+course+in+pune/@18.488109,73.81378,15z/data=!4m6!3m5!1s0x3bc2bf8f5cb04d43:0x6086eea76ee84fb6!8m2!3d18.488109!4d73.81378!16s%2Fg%2F11g98wlxts?entry=ttu" target="blank">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                office no 202, above Jijamata bank, Karve Nagar, Pune, Maharashtra 411052
+              </span>
+            </a>
+            <a href="call">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Call 9767847265
+              </span>
+            </a>
+            <a href="email">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                fullstackdevelopercourseinpune@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+       
+      </div>
+      <div class="col-md-6 col-lg-3 info_col">
+        <div class="info_detail">
+          <h4>
+            Info
+          </h4>
+          <p>
+            Discover your potential by enrolling in a full stack course in Pune, where you may gain access to all the resources you need to become an expert programmer in full stack.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-2 mx-auto info_col">
+        <div class="info_link_box">
+          <h4>
+            Links
+          </h4>
+          <div class="info_links">
+            <div>
+            <a class="active" href="index.html">
+              Home
+            </a>
+            <a  href="#about">
+              About
+            </a>
+            <a  href="./blog.html">
+              Blogs
+            </a>
+          </div>
+          <div >
+            <a  href="#contact">
+            contact
+            </a>
+            <a  href="#courses">
+              Courses
+            </a>
+
+          </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 info_col ">
+        <h4>
+          Get in touch with us 
+        </h4>
+      <div class="info_social">
+          <a href="facebook">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="linkedin">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="instagram">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="www.fullstackdevelopercourseinpune.in">Fullstack developer Course in Pune</a>
+      </p>
+    </div>
+  </section>
+</section>
   <!-- end info section -->
 
   <!-- footer section -->
  
   <!-- footer section -->
+
+
+
+<!-- my script -->
+<script src="./js/script.js"></script>
+
+
 
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
@@ -494,7 +375,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
   <!-- End Google Map -->
-
+  <script src="https://kit.fontawesome.com/87bf3bf1df.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
