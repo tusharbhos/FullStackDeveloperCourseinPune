@@ -32,7 +32,7 @@
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" /> 
 
   <!-- private css -->
 <link rel="stylesheet" href="./css/fullstackdevelopercourseinpune.css">
@@ -74,17 +74,21 @@ ul li{
 
 <body>
 
-  <div class="hero_area blog-hero-area">
-
-    
+ 
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <!-- <div class="bg_img_box">
+        <img style="opacity:100%" src="images/gallery/gallery-img-1-dark.jpg" alt="hero-session-image">
+      </div> -->
+    </div>
 
     <!-- header section strats -->
-    <header class="header_section blog-header">
+    <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <img class="logo-dscip" src="./images/DSCIP LOGO.png" alt="logo"/>
-           </a>
+           <img class="logo-dscip" src="./images/DSCIP LOGO.png" alt="logo"/>
+          </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
@@ -93,25 +97,80 @@ ul li{
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
               <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home </a>
-              </li> 
-              <li class="nav-item active">
-                <a class="nav-link" href="./blog.html"> Blog <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a class="dropbtn nav-link">Course</a>
+                   <div class="dropdown-content">
+                    <a class="dropdown-item" href="./mern-stack-course-in-pune.html">Mern stack development</a>
+                    <a class="dropdown-item" href="./mean-stack-course-in-pune.html">Mean stack development</a>
+                    <a class="dropdown-item" href="./full-stack-java-course-in-pune.html">Full stack with javascript</a>
+
+                  </div>
+                </div>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html"> Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact</a>
+              </li>
+           <!-- new added  -->
+              <li class="nav-item">
+                <a class="btn btn-primary  ml-lg-3 mt-2 mt-lg-0" href="#enrollnow">Enroll Now</a>
+            </li>
+              
+  
+
+           
             </ul>
           </div>
         </nav>
       </div>
     </header>
     <!-- end header section -->
-    </div>
+
+
+
+
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <h1 style="color:#fff;font-weight:bold;text-transform: none !important; "class="mb-4">Full Stack Developer Course in Pune</h1>
+
+                <h2  style="color:#fff" class="pt-4" >Get 100% placement in fullstackdevelopercourseinpune</h2>
+                <p  style="color:#fff" class="pt-2" >Looking for the best full stack developer course in Pune? Our institute, FullstackdeveloperCourseInPune, offers top-notch training designed to help you excel in the field. With a comprehensive curriculum covering everything from basics to advanced techniques, our courses are led by industry experts. We emphasize hands-on learning with real-world projects, ensuring you gain practical skills. Join us to transform your career and become a part of Pune’s leading data science community. Enroll now at FullstackdeveloperCourseInPune and unlock your potential!</p>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+       
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+  
  
 
     <!-- body section started...... -->
 
     <!-- heading............ -->
 
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <div class="row title-div">
         <div class="col-lg-12" >
             <div class="div pt-4 pb-4" style="width:80%;margin: auto; ">
@@ -123,7 +182,7 @@ ul li{
         </div>
     </div>
 </div>
-
+ -->
 
 <!-- why choose us.................... -->
 <section class="layout_padding">
