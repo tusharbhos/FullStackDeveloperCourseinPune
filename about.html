@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Best FullStack developer Course in Pune </title>
+  <title>About-us</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -32,72 +32,60 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
-  <style>
-    .container-about {
-    text-align: center;
-    padding: 70px;
-}
+  <!-- ..............................about-css...................................... -->
+   <link rel="stylesheet" href="./css/about.css">
 
-h2 {
-    margin-bottom: 20px;
-}
 
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
+   <style>
+    .dropdown-item:hover{
+  color:blue !important;}
+  .dropbtn {
+  
+    color: white;
+    background-color: transparent !important;
+    
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
 
-.box {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 200px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.box:hover {
-    transform: translateY(-5px);
-}
-
-.icon {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-    .box {
-        width: 45%;
-    }
-}
-
-@media (max-width: 480px) {
-    .box {
-        width: 100%;
-    }
-}
-  </style>
+    
+   </style>
 
 </head>
 
 <body>
 
-  <div class="hero_area">
-    <div class="hero_bg_box">
-      <!-- <div class="bg_img_box">
-        <img style="opacity:100%" src="images/gallery/gallery-img-1-dark.jpg" alt="hero-session-image">
-      </div> -->
-    </div>
-
-    <!-- header section strats -->
+  <div class="hero_area blog-hero-area">
+    <!-- header section starts -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+         <a class="navbar-brand" href="index.html">
            <img class="logo-dscip" src="./images/DSCIP LOGO.png" alt="logo"/>
           </a>
 
@@ -108,22 +96,29 @@ h2 {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
               <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#about"> About <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./about.html"> About</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="service.html">Services  </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
-              <li class="nav-item">
+              
+             
+              <li  class="nav-item">
                 <div class="dropdown">
                   <a class="dropbtn nav-link">Course</a>
-                   <div class="dropdown-content">
-                    <a class="dropdown-item" href="./mern-stack-course-in-pune.html">Mern stack </a>
-                    <a class="dropdown-item" href="./mean-stack-course-in-pune.html">Mean stack </a>
-                    <a class="dropdown-item" href="./full-stack-java-course-in-pune.html">Full stack with java</a>
-
+                  <div class="dropdown-content">
+                    <a class="dropdown-item" href="./mean-stack-course-in-pune.html">Mean Stack</a>
+                    <a class="dropdown-item" href="./mern-stack-course-in-pune.html">Mern Stack</a>
+                    <a class="dropdown-item" href="./full-stack-java-course-in-pune.html">Fullstack with Java</a>
+                    
+                   
+                   
                   </div>
                 </div>
               </li>
@@ -132,259 +127,249 @@ h2 {
                 <a class="nav-link" href="./blog.html"> Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contactus.html">Contact</a>
+                <a class="nav-link" href="./contactus.html">Contact</a>
               </li>
            <!-- new added  -->
-              <li class="nav-item">
-                <a class="btn btn-primary  ml-lg-3 mt-2 mt-lg-0" href="#enrollnow">Enroll Now</a>
-            </li>
-              
-  
-
-           
+           <li class="nav-item">
+            <a class="btn btn-primary  ml-lg-3 mt-2 mt-lg-0" href="#syllabus">Syllabus</a>
+        </li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
     <!-- end header section -->
+    </div>
+   
+
+<!-- body............................ -->
 
 
 
+<!-- scrap -->
 
-    <!-- slider section -->
-    <section class="slider_section ">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container ">
-              <div class="row">
-                <h1 style="color:#fff;font-weight:bold;text-transform: none !important; "class="mb-4">Full Stack Developer Course in Pune</h1>
-              </div>
-            </div>
-          </div>
-        
-        </div>
-       
+<!-- <section >
+  <div class="container-fluid our-mission-parent px-4 text-center hero_area" >
+    <div class="row gx-5">
+      <div class="col-lg-9 our-mission-left">
+       <div class="p-3">
+        <h2 style="text-align: left;">Our Mission</h2>
+        <p style="text-align: left;">At sapficocourseinpune, our mission is to deliver comprehensive and practical SAP FICO training to help individuals and businesses achieve their financial management goals. We are committed to providing top-quality education and support to ensure our students and clients excel in their SAP FICO endeavors.  </p>
+       </div>
       </div>
 
-    </section>
-    <!-- end slider section -->
+      <div class="col-lg-3">
+        <div class="p-3">
+          <img style="width:100%;height:17rem" src="./images/about-us-our-mission.png" alt="about-us-our-mission"/>
+        </div>
+      </div>
+
+    </div>
   </div>
+</section> -->
+
+
+
+
+  <!-- our-mission-div................................ -->
+  <section class="hide">
+    <div class="container-fluid our-mission-parent px-4  about-hero_area" >
+      <div class="row gx-5">
+        <div class="col-lg-12 our-mission-left">
+         <div class="p-3">
+          <h1 style="text-align: left;">About Us</h1>
+         
+         </div>
+        </div>
+  
+   
+  
+      </div>
+    </div>
+  </section>
   
 
 
+<!-- about-us-div...........................-->
 
-  <section class="about-us-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1>About us</h1>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb justify-content-center">
-                        <li class="breadcrumb-item"><a href="#">FullStack developer Course</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">About Us</li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
-        <div class="row align-items-center">
+ <section class="layout_padding about-us-content mt-2">
+
+  <div class="container about-us-parent">
+    <div class="row gx-5">
+
+      <div class="col-lg-5">
+       <div class=" about-left" style="height:100%">
+        <img src="./images/about-us-image.webp" style="margin:auto;height:82%;width:100%" alt="about-us"/>
+       </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="p-3 about-right">
+          <h2 >Get Certified at Full stack developer Course in Pune</h2>
+          <p class="mt-4">Welcome to Fullstackdeveloper Course in pune, the best place to learn full stack development. Our mission is to provide individuals and groups with the newest know-how and abilities necessary to succeed in the technology sector. Our program, which is carefully designed by leading industry experts and is based in Pune, guarantees practical experience with real-world projects.
            
-            <div class="col-md-6">
-                <h2>15+ Years Experience</h2>
-                <h3>No.1 FullStack developer Course in Pune</h3>
-                <p><strong>FullStack developer Course</strong>We are Fullstack developer Course in pune
-                  Welcome to Fullstackdeveloper Course in pune, the best place to learn full stack development.
-                   Our mission is to provide individuals and groups with the newest know-how and abilities necessary to succeed in the technology sector.
-                    Our program, which is carefully designed by leading industry experts and is based in Pune, guarantees practical experience with real-world projects.</p>
-                <a href="#" class="btn btn-primary my-5">Contact us</a>
-            </div>
-            <div class="col-md-6 text-center">
-              <img src="./images/about-us-img.jpg" alt="UI UX Design School" class="img-fluid mb-3">
-          </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-<section class="about-us-section">
-  <div class="container">
-      
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center">
-          <img src="./images/aboutstory.jpg" alt="UI UX Design School" class="img-fluid mb-3">
-      </div>
-         
-          <div class="col-md-6">
-              <h2>15+ Years Experience</h2>
-              <h3>No.1 FullStack developer Course in Pune</h3>
-              <p><strong>FullStack developer Course</strong>We are Fullstack developer Course in pune
-                Welcome to Fullstackdeveloper Course in pune, the best place to learn full stack development.
-                 Our mission is to provide individuals and groups with the newest know-how and abilities necessary to succeed in the technology sector.
-                  Our program, which is carefully designed by leading industry experts and is based in Pune, guarantees practical experience with real-world projects.</p>
-              <a href="#" class="btn btn-primary my-5">Contact us</a>
-          </div>
-          
-      </div>
-  </div>
-</section>
-
-
-
-<!-- <div class="container-fluid community-section my-5" style="background-color: rgb(158, 158, 228);" >
-  <div class="container">
-      <div class="row">
-          <div class="col-md-6">
-              <p class="community-title">COMMUNITY</p>
-              <h2 class="community-main-title">Be a part of a Helping Community</h2>
-          </div>
-          <div class="col-md-6 d-flex align-items-center">
-              <p class="community-text">We help you support each other and give you a platform to share your queries and discuss them.</p>
-          </div>
-      </div>
-  </div>
-</div> -->
-
-
-<div class="container-about">
-  <h2>What We Do</h2>
-  <div class="grid">
-      <div class="box project">
-          <i class="icon">&#128187;</i> <!-- Example icon -->
-          <p>Project</p>
-      </div>
-      <div class="box focus-training">
-          <i class="icon">&#128065;</i> <!-- Example icon -->
-          <p>Focus Training</p>
-      </div>
-      <div class="box placement">
-          <i class="icon">&#127760;</i> <!-- Example icon -->
-          <p>Placement</p>
-      </div>
-      <div class="box skill">
-          <i class="icon">&#127919;</i> <!-- Example icon -->
-          <p>Skill</p>
-      </div>
-  </div>
-</div>
-
-
-<!-- footer....................................................... -->
-<section class="info_section layout_padding2 mt-3">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-lg-4 info_col">
-        <div class="info_contact">
-          <h4>
-            Address
-          </h4>
-          <div class="contact_link_box">
-            <a href="https://www.google.com/maps/place/DataCouncil+%7C+data+science+course+in+pune/@18.488109,73.81378,15z/data=!4m6!3m5!1s0x3bc2bf8f5cb04d43:0x6086eea76ee84fb6!8m2!3d18.488109!4d73.81378!16s%2Fg%2F11g98wlxts?entry=ttu" target="blank">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                office no 202, above Jijamata bank, Karve Nagar, Pune, Maharashtra 411052
-              </span>
-            </a>
-            <a href="call">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call 9767847265
-              </span>
-            </a>
-            <a href="email">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-                fullstackdevelopercourseinpune@gmail.com
-              </span>
-            </a>
-          </div>
-        </div>
+<br/>  <br/>
+           
+Our programs are made to meet you where you are, regardless of whether you're just getting started or want to improve your abilities. Come explore the possibilities of fullstack development with us.
        
-      </div>
-      <div class="col-md-6 col-lg-3 info_col">
-        <div class="info_detail">
-          <h4>
-            Info
-          </h4>
-          <p>
-            Discover your potential by enrolling in a full stack course in Pune, where you may gain access to all the resources you need to become an expert programmer in full stack.
-          </p>
+      
         </div>
       </div>
-      <div class="col-md-6 col-lg-2 mx-auto info_col">
-        <div class="info_link_box">
-          <h4>
-            Links
-          </h4>
-          <div class="info_links">
-            <div>
-            <a class="active" href="index.html">
-              Home
-            </a>
-            <a  href="#about">
-              About
-            </a>
-            <a  href="./blog.html">
-              Blogs
-            </a>
-          </div>
-          <div >
-            <a  href="#contact">
-            contact
-            </a>
-            <a  href="#courses">
-              Courses
-            </a>
 
-          </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3 info_col ">
-        <h4>
-          Get in touch with us 
-        </h4>
-      <div class="info_social">
-          <a href="facebook">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-          </a>
-          <a href="twitter">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </a>
-          <a href="linkedin">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a href="instagram">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
     </div>
   </div>
-  <section class="footer_section">
+
+  </section>
+
+
+
+  <section class="layout_padding">
     <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="www.fullstackdevelopercourseinpune.in">Fullstack developer Course in Pune</a>
-      </p>
+      <div class="row">
+        <div class="col-lg-12">
+         <h3 class="mt-4"> Full Stack Developer Course in Pune Journey</h3>
+<p>Full Stack Developer Course in Pune is a premier program that has been at the forefront of offering comprehensive Full Stack Development education for a considerable period. Our journey began with a vision to empower individuals with the essential skills to thrive in the competitive field of Full Stack Development. Since our inception, we have been dedicated to delivering exceptional education and training, fostering creativity, and nurturing expertise.</p>
+
+<h3 class="mt-5">Purpose and Goals</h3>
+<p>At Full Stack Developer Course in Pune, our purpose is to equip aspiring developers with the knowledge, leadership, and practical skills required to become industry-ready professionals. We aim to bridge the gap between theoretical learning and real-world applications through our comprehensive Full Stack Developer Course in Pune. Our primary goal is to make a significant impact on individuals' careers by providing them with the crucial tools and guidance to succeed in the ever-evolving Full Stack Development industry. By imparting cutting-edge knowledge, fostering creativity, and developing critical thinking skills, we aim to shape the future of development.</p>
+
+<h3 class="mt-4">Introduction to the Team</h3>
+<p>
+  Our team at Full Stack Developer Course in Pune comprises highly passionate and experienced professionals who have a deep understanding of Full Stack Development. With years of industry experience and expertise in their respective domains, our instructors are committed to delivering world-class education and mentorship. Our faculty members bring a diverse range of skills and knowledge to the classroom. They provide not only theoretical insights but also share their real-world experiences, enabling students to gain practical understanding. Together, our team establishes a dynamic and inspiring learning environment, ensuring that students receive the best possible education.
+</p>
+
+<h3 class="mt-4">Course Offerings</h3>
+<P>
+  Full Stack Developer Course in Pune offers a wide range of courses that cater to individuals with varying levels of experience and expertise. Our comprehensive curriculum covers various aspects of Full Stack Development, including front-end development, back-end development, database management, and deployment. With a strong emphasis on practical learning, our courses empower students to develop their technical skills and creative abilities. We leverage state-of-the-art infrastructure and tools to provide a hands-on learning experience. Our students work on real-world projects, enabling them to gain valuable experience and build a robust portfolio. We also conduct regular workshops, guest lectures, and industry visits to broaden our students' perspectives and keep them updated with the latest industry trends. Explore the pinnacle of Full Stack Development education with our Full Stack Developer Course in Pune. Our course stands as a beacon of excellence, offering an exceptional learning journey meticulously designed to nurture innovative minds. Dive deep into the world of full-stack development, mastering principles of front-end and back-end creation, database management, and application deployment. Led by industry experts and enriched with hands-on projects, our course empowers aspiring developers with the skills and insights needed to craft immersive digital experiences. Join us to unlock your potential and pave the way to a rewarding career in Full Stack Development.
+</P>
+
+<h3 class="mt-4">Accomplishments</h3>
+As an ISO-certified institution, Full Stack Developer Course in Pune takes pride in its achievements and recognitions. We have emerged as a leader in Full Stack Development training, with a proven track record of delivering exceptional education and fostering industry professionals. Some of our notable accomplishments include:
+<ul>
+  <li>Consistently achieving 100% placement for our students in reputed companies</li>
+  <li>
+    Recognition as a center of excellence for Full Stack Development by industry-leading organizations</li>
+    <li>Institute which gives live prohects and Internship.</li>
+    <p>Best Career guidance and provide better future Oportunities.</p>
+</ul>
+
+
+<h3 class="mt-4">Call To Action</h3>
+<p>Are you ready to embark on a transformative journey within the realm of Full Stack Development? Join Full Stack Developer Course in Pune, the best Full Stack Development program in pune, and unlock your potential in this dynamic industry. Visit our website Full Stack Developer Course in Pune to explore our courses, faculty, and impressive portfolio. Enroll today and elevate your career as a Full Stack Development professional!</p>
+        </div>
+      </div>
     </div>
   </section>
-</section>
-  <!-- end info section -->
 
-  <!-- footer section -->
+
+  <!-- footer....................................................... -->
+  <section class="info_section layout_padding2 mt-3">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-5 info_col p-3">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://www.google.com/maps/place/DataCouncil+%7C+data+science+course+in+pune/@18.488109,73.81378,15z/data=!4m6!3m5!1s0x3bc2bf8f5cb04d43:0x6086eea76ee84fb6!8m2!3d18.488109!4d73.81378!16s%2Fg%2F11g98wlxts?entry=ttu" style="color:white !important"
+                target="blank">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span class="course-des">
+                  office no 202, above Jijamata bank, Karve Nagar, Pune, Maharashtra 411052
+                </span>
+              </a>
+              <a href="tel:8882192787" style="color:white !important">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span class="course-des">
+                  9356097343
+                </span>
+              </a>
+             
+              <a href="mailto:ketankatkar213@gmail.com?subject=subject text" style="color:white !important">
+                <i class="fa fa-envelope"  aria-hidden="true"></i>
+                <span class="course-des">
+                  fullstackdevelopercourseinpune@gmail.com
+                </span>
+              </a>
+            </div>
+
+            <div class="info_social" style="padding:30px 40px 0px 0px">
+              <a href="facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="linkedin">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="instagram">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-6 col-lg-4 info_col p-2">
+          <div class="info_detail">
+            <h4 class="center">
+              Info
+            </h4>
+            <p class="course-des">
+              Discover your potential by enrolling in a full stack course in Pune, where you may gain access to all the
+              resources you need to become an expert programmer in full stack.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mx-auto info_col p-3">
+          <div class="info_link_box course-des">
+            <h4 class="center">
+              Links
+            </h4>
+            <div class="info_links">
+              <div>
+                <a class="active" href="index.html">
+                  Home
+                </a>
+                <a href="./about.html">
+                  About
+                </a>
+                <a href="./blog.html">
+                  Blogs
+                </a>
+              </div>
+              <div>
+                <a href="./contactus.html">
+                  contact
+                </a>
+                <a href="./mern-stack-course-in-pune.html">
+                  Courses
+                </a>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <section class="footer_section">
+      <div class="container">
+        <p style="font-size: 19px;">
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="www.fullstackdevelopercourseinpune.com">Fullstack developer Course in Pune</a>
+        </p>
+      </div>
+    </section>
+  </section>
  
-  <!-- footer section -->
 
-
-
-<!-- my script -->
-<script src="./js/script.js"></script>
-
-
+ 
 
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
@@ -400,9 +385,11 @@ h2 {
   <script type="text/javascript" src="js/custom.js"></script>
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    
   </script>
+  <script src="./js/script.js"></script>
   <!-- End Google Map -->
-  <script src="https://kit.fontawesome.com/87bf3bf1df.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
