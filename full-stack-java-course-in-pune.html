@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
@@ -14,36 +13,146 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-
-  <title>full-stack-java-course-in-pune</title>
-
+  <title>full stack with java  course in pune</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-
 
   <!--owl slider stylesheet -->
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-
   <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
-
 
   <!-- Custom styles for this template -->
   <link href="./css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="./css/responsive.css" rel="stylesheet" />
   <link rel="stylesheet" href="./css/course-detail.css">
+  
+  
+  <style>
+    
 
+.job-profile .rounded, .course-details {
+    height: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-profile .rounded:hover, .course-details:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.job-profile span{
+  font-weight: bold;
+  color: red;
+}
+.job-profile h5{
+  font-weight: bold;
+}
+/* new box  */
+
+.job-profile1 .rounded, .course-details{
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.job-profile1 .rounded:hover, .course-details:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.job-profile1 span{
+  font-weight: bold;
+  color: red;
+}
+.job-profile1 h5{
+ border-bottom: 1px solid;
+ margin-bottom: 30px;
+ font-weight: bold;
+ font-size: 30px; 
+}
+
+/* new boxx  */
+.container-card{
+    padding: 30px;
+    margin-left: 50px ;
+}
+
+.course-detail-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.course-details-content {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-details-content p {
+    margin: 0;
+}
+
+
+@media (max-width: 767px) {
+    .course-detail-heading {
+        font-size: 1.2rem;
+    }
+
+    .course-details-content p {
+        font-size: 0.9rem;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.custom-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: coral;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+
+@media (max-width: 767px) {
+    .card-title {
+        font-size: 1rem;
+    }
+    
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+  </style>
 
 </head>
-
 
 <body>
 
@@ -72,15 +181,15 @@
               <li class="nav-item ">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#about"> About <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
                 <div class="dropdown">
-                  <a class="dropbtn nav-link">Course</a>
+                  <a class="dropbtn nav-link">Course <span class="sr-only">(current)</span></a>
                    <div class="dropdown-content">
                     <a class="dropdown-item" href="./mern-stack-course-in-pune.html">Mern stack </a>
                     <a class="dropdown-item" href="./mean-stack-course-in-pune.html">Mean stack </a>
@@ -121,7 +230,7 @@
           <div class="carousel-item active">
             <div class="container ">
               <div class="row">
-                <h1 style="color:#fff;font-weight:bold;text-transform: none !important; "class="mb-4">Full Stack Developer Course in Pune</h1>
+                <h1 style="color:#fff;font-weight:bold;text-transform: none !important; "class="mb-4">Mern Stack Course in Pune</h1>
               </div>
             </div>
           </div>
@@ -135,86 +244,274 @@
   </div>
   
 
-  <div class="heading_container heading_center">
-    <h2 style="border-bottom: 4px solid #00204a; padding-bottom: 8px;">
-      Full-Stack Java Course in Pune
-    </h2>
-    <h4>
-      welcome to our Full-Stack Java Course in Pune
-    </h4>
+
+
+  
+
+<!-- Company Detail Start -->
+<section class="section my-5">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-5 col-12">
+  <div class="job-profile my-5">
+    <div class="rounded shadow bg-white">
+      <div class="text-center py-5 border-bottom">
+        <img src="./images/Fullstackjava.jpg" width="80%" class=""
+          alt="Graphic design institute in Pune" />
+        <h5 class="mt-3 mb-0">Full Stack with Java</h5>
+        <!-- <p class="mb-0">Course</p> -->
+      </div>
+
+      <div class="p-4">
+        <h5>Course Details :</h5>
+        <ul class="list-unstyled mb-4">
+          <li class="h6">
+            <i class="fa fa-map-marker  mr-2" aria-hidden="true" ></i><span>Location : </span>Pune,Nagpur
+          </li>
+          <li class="h6">
+            <i class="fa fa-building  mr-2" aria-hidden="true"></i><span>Comapny : </span>Full stack developer course in pune
+          </li>
+          <!-- <li class="h6">
+            <i class="fa fa-calendar-plus-o mr-2" aria-hidden="true"></i><span>Duration :</span> 6 Months
+          </li>
+          <li class="h6"> 
+            <i class="fa fa-certificate mr-2" aria-hidden="true"></i><span>Certificate :</span> YES
+          </li>
+
+          <li class="h6">
+            <i class="fa fa-microphone mr-2" aria-hidden="true"></i><span>Recording :</span> YES
+          </li>
+          <li class="h6">
+            <i class="fa fa-check-circle-o mr-2" aria-hidden="true"></i><span>Skill Level :</span> Begineer
+          </li> -->
+        </ul>
+        <a href="" class="btn btn-block btn-primary">Apply Now</a>
+      </div>
+    
+    </div>
+
+
+  </div>
+  <div class="job-profile1 my-5">
+    <div class="rounded shadow bg-white">
+      <div class="p-4 my-5">
+        <h5>Course Features :</h5>
+        <ul class="list-unstyled mb-4">
+          <li class="h6">
+            <i class="fa fa-calendar-plus-o mr-2" aria-hidden="true"></i><span>Duration :</span> 6 Months
+          </li>
+          <li class="h6"> 
+            <i class="fa fa-certificate mr-2" aria-hidden="true"></i><span>Certificate :</span> YES
+          </li>
+          <li class="h6">
+            <i class="fa fa-microphone mr-2" aria-hidden="true"></i><span>Recording :</span> YES
+          </li>
+          <li class="h6">
+            <i class="fa fa-check-circle-o mr-2" aria-hidden="true"></i><span>Skill Level :</span> Begineer
+          </li>
+        </ul> 
+      </div>
+    </div>
   </div>
 
+</div>
 
-  <div class="container-fluid">
+<!--end col-->
+
+<div class="col-lg-8 col-md-7 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+  <div class="ml-md-4 my-5">
+    <h1>Full Stack with java Course in Pune - About us :</h1>
+    <p>
+      Welcome to fullstack developmentcourse in pune , the premier Graphic Design
+      Institute in Pune! With a decade of experience in the design
+      industry, we take pride in offering top-notch training and
+      career development services. Our team of experts brings a wealth
+      of knowledge and real-world experience in software development,
+      team building, and mentoring.
+    </p>
+    <p>
+      We have successfully trained numerous technical resources who
+      have gone on to secure leadership positions in leading software
+      companies worldwide. Our proven track record is a testament to
+      the quality of our training programs and the success of our
+      graduates.
+    </p>
+    <p>
+      At fullstack developmentcourse in pune we understand the importance of staying
+      abreast of the latest trends in the software industry. That's
+      why we tailor our training programs to incorporate the most
+      current techniques and practices. Whether you're a beginner or
+      an experienced professional, our courses are designed to equip
+      you with the skills needed to excel in the graphic design field.
+    </p>
+    <p>
+      Our graphic design classes in Pune are renowned for providing
+      the best training in graphic designing. We believe in a hands-on
+      approach and offer 100% practical training to our students.
+      Through live projects and real-world scenarios, you'll gain
+      valuable experience and develop the necessary expertise to
+      tackle any design challenge.
+    </p>
+    <p>
+      With a focus on both India and Singapore based live projects, we
+      offer a unique opportunity for our students to work on diverse
+      and cutting-edge design projects. This exposure enhances their
+      understanding of global design trends and prepares them for the
+      demands of an international clientele.
+    </p>
+    <p>
+      When you choose fullstack developmentcourse in pune for your graphic design
+      training, you'll benefit from our commitment to excellence,
+      industry relevance, and personalised attention. Our experienced
+      faculty and state-of-the-art infrastructure ensure a conducive
+      learning environment where you can thrive and unleash your
+      creative potential.
+    </p>
+    <p>
+      Join us at fullstack developmentcourse in pune and take the first step towards a
+      successful career in graphic design. Contact us now to arrange a
+      consultation and discover the exciting possibilities that await
+      you in the world of design.
+    </p>
+    <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card custom-card">
+                  <div class="card-body">
+                      <h5 class="card-title">100% Assured Placement</h5>
+                      <p class="card-text">We are in collaboration with 100s of companies</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card custom-card">
+                  <div class="card-body">
+                      <h5 class="card-title">Scholarship worth 30000₹ +</h5>
+                      <p class="card-text">Get Scholarship from Singapore based companies with Internship</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card custom-card">
+                  <div class="card-body">
+                      <h5 class="card-title">Internships with Live Projects</h5>
+                      <p class="card-text">Work on Live Projects under experienced Designers</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row mt-4">
+          <div class="col-md-4">
+              <div class="card custom-card">
+                  <div class="card-body">
+                      <h5 class="card-title">Be a part of a great supportive community</h5>
+                      <p class="card-text">Community with 24/7 support</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card custom-card">
+                  <div class="card-body">
+                      <h5 class="card-title">Learn Latest Tools and Technologies for Designing</h5>
+                      <p class="card-text">Adobe XD, WebFlow, Undraw and so many more</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card custom-card">
+                  <div class="card-body">
+                      <h5 class="card-title">3 Projects based on Real world Apps and Websites</h5>
+                      <p class="card-text">Ecom Project with Complete Walk through and explanation and more</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+<!--end col-->
+</div>
+<!--end row-->
+</div>
+<!--end container-->
+</section>
+<!--end section-->
+
+
+
+
+
+
+
+
+  <!-- <div class="container-fluid">
     <div class="row">
 
+      <div class="col-lg-8">
+        <img class="blog-image" style="border:2px solid lightgrey;" src="./images/mern.png" alt="blog-1" />
+        <div class="heading">
 
-      <!-- <div class="col-lg-7">
-        <img class="blog-image" style="border:2px solid lightgrey;" src="./images/Fullstackjava.jpg" alt="blog-1" />
-        <div class="heading"> -->
-
-
-          <h1 class="mt-4"> <span>|</span>Full-Stack Java Course in Pune</h1>
-
+          <h1 class="mt-4"> <span>|</span>Mern Stack Course in Pune </h1>
 
         </div>
         <div class="course-description-details mt-4">
-          <h2>Get Ready to Become a Web Development Expert with Our Full-Stack Java Course in Pune! </h2>
-          <p>Are you aspiring to kick start your career in web development? If you’re looking for a place to start, then our <b>Full-Stack Java course in Pune</b> is the best course for you! This course is aimed at anyone who is interested in developing current web applications from scratch regardless of your level of programming proficiency.</p>
-          <h2>What will you learn? </h2>
-          <p><li><b>The Fundamentals:</b>Learn the fundamental concepts of web development such as HTML5, CSS, and Javascript. </li>
-            <li><b>Java Expertise:</b> Get to know Java, an advanced programming language, without which no web application can be developed.</li>
-            <li><b>Frontend and Backend Development: </b>Understand how to develop both the part that the users interact with (frontend) as well as the part that interacts with the server (backend) of web applications with Java frameworks such as Spring Boot at our<b>best Full-Stack Java course in Pune</b> </li>
-            <li><b>Databases:</b>Gain the knowledge on how data can be stored and managed using widely used databases like MySQL.</li>
-            <li><b>Hands-on Projects:</b> At our best <b>Full-Stack Java course in Pune</b>  we help you to reinforce your knowledge by applying it to practical projects over the course.</li>
+          <h2>Looking to unleash your web application development potential? Look no further than our MERN Stack course
+            in Pune!</h2>
+          <p>Come and join the <b>Best MERN Stack Course in Pune</b> now! Whether you are a complete fresher wanting to
+            begin your web development career or an experienced programmer who wants to enhance his or her knowledge and
+            skills, then our inclusive MERN Stack course is just right for you.</p>
+          <h2>Course Overview:</h2>
+          <p>As one of the <strong>best MERN Stack training</strong> programs, our course gives a detailed look at
+            MongoDB, Express. js, React, and Node. JS—is a set of technologies for creating web applications of the ‘new
+            generation’. This course is designed to equip you with the necessary knowledge as well as practical skills;
+            thus, by the end of this course, you will be in a position to develop strong, interactive, and flexible web
+            applications.
           </p>
         </div>
         <div class="course-description-details mt-4">
-          <h2>Why choose our course?</h2>
+          <h2>Course Content:</h2>
           <p>
           <ul>
-           <li><b>Experienced Instructors:</b> At our best Full-Stack Java course in Pune, learn from experienced and enthusiastic professionals who will help you in every process of the course.</li>
-           <li><b>Practical Learning:</b> With our Best Full-Stack Java Classes in Pune you will be gaining practical coding practice and build projects that you can be proud of.</li>
-           <li><b>Flexible Learning Options:</b>Hence, select a course that fits your timetable, be it weekdays, weekends or online classes.</li>
-           <li><b>Career Support:</b>At our Full-Stack Java Training in Pune, we will assist you in building your resume, in getting prepared for interviews and even assisting you in getting that dream job!</li>
-           <li><b>Certification:</b>When you are through with <b>our Full-Stack Java course in Pune</b> , you will be awarded a valid certificate that will act as a ticket to the world of technology and development.</li>
-          </ul>
-          </p>
-        </div>
+           <h3>Module 1:</h3> 
+            <li>Basics of Web Development</li>
+            <li> This includes the bare basics of using HTML, CSS, and JavaScript.</li>
 
-        <div class="course-description-details mt-4">
-          <h2>Full-Stack Java Examination: </h2>
-          <p>
-            We conduct periodic assessments to understand how much have you learnt from our classes:
-          <ul>
-           <li><b>Quizzes and Assignments:</b>There are many ways to monitor your progress regularly, and one of them is to take tests.</li>
-           <li><b>Final Project Evaluation:</b>It will be necessary to develop a capstone project that will prove your abilities and skills.</li>
-           <li><b>Certification Exam:</b>A full course assessment to enable you to earn your course completion certificate</li>
-          
-          </ul>
-          </p>
-        </div>
+            <h3>Module 2:</h3> 
+            <li>Introduction to NoSQL Databases</li>
+            <li>CRUD Operations</li>
+            <li>Aggregation Framework</li>
 
-        <div class="course-description-details mt-4">
-          <h2>Proficiency After Course </h2>
-          <p>
+  <h3>Module 3:</h3> 
+            <li>Building RESTful APIs</li>
+            <li>Middleware Functions</li>
+            <li>Routing and HTTP Methods</li>
+
            
-          <ul>
-          <li>Anyone interested in web development</li>
-          <li>For the novices or the persons who have no background in coding.</li>
-          <li>Java and Full-Stack development for experienced programmers.</li>
-          
+  <h3>Module 4:</h3> 
+            <li>React Components and JSX</li>
+            <li>State and Props</li>
+            <li>Hooks and Context API</li>
+            
+
+            <h3>Module 5:</h3> 
+            	<li>Server-Side JavaScript</li>
+	<li>Some basic concepts of working with files and modules</li>
+	<li>Asynchronous Programming with Node.js</li>
+
+
+           
+  <h3>Module 6:</h3> 
+            	<li>Connecting Frontend with Backend</li>
+            	<li>User Authentication</li>
+            	<li>Deploying MERN Applications</li>
+            
+
+
           </ul>
-          <b>Don't wait any longer! start your journey towards a successful profession of Full-Stack Java developer!</b>
           </p>
         </div>
-
 
       </div>
 
 
-
-<!-- 
       <div class="col-lg-4 social-meia-icons ">
         <div class="course-details sticky">
           <div class="course-detail-heading">
@@ -225,60 +522,46 @@
             <p>6 Months</p>
 
 
-
-
           </div>
-         
+          
           <div class="course-details-content">
             <p> <i class="fa-solid fa-bars-progress"></i>Skill Level</p>
             <p>Begineer</p>
 
-
           </div>
-         
+          
           <div class="course-details-content">
             <p><i class="fa-solid fa-award"></i>Certificate</p>
             <p>Yes</p>
 
-
           </div>
-         
+          
           <div class="course-details-content" style="border:none;">
             <p> <i class="fa-solid fa-record-vinyl"></i>Recording</p>
             <p>Yes</p>
 
-
           </div>
 
 
+        </div> -->
 
-
-        </div>
-
-
-        <div class="course-plan-parent mt-4 p-3">
+        <!-- <div class="course-plan-parent mt-4 p-3">
           <i class="fa-solid fa-download"></i> <a href="./images/favicon.png" download>
             <h5>Download Course Syllabus</h5>
           </a>
-        </div>
+        </div> -->
 
 
+      
+<!-- 
 
 
-     
-
-
-
-
-
-
-      </div> -->
-
+      </div>
 
     </div>
-  </div>
+  </div> -->
 
-
+  
   <!-- footer....................................................... -->
   <section class="info_section layout_padding2 mt-3">
     <div class="container">
@@ -332,7 +615,7 @@
                 Home
               </a>
               
-              <a class="active" href="./full-stack-java-course-in-pune.html">
+              <a class="active" href="./mern-stack-course-in-pune.html">
                 Course
               </a>
             </div>
@@ -372,15 +655,11 @@
     </section>
   </section>
 
-
   <!-- end info section -->
 
-
   <!-- footer section -->
 
-
   <!-- footer section -->
-
 
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
@@ -401,9 +680,6 @@
   <script src="https://kit.fontawesome.com/87bf3bf1df.js" crossorigin="anonymous"></script>
   <!-- End Google Map -->
 
-
 </body>
 
-
 </html>
- 
